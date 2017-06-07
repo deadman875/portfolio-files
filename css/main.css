@@ -94,7 +94,39 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+nav ul,
+nav ol,
+nav li {
 
+  list-style: none;
+  list-style-image: none;
+  margin:0;
+  padding: 0;
+  float: left;
+}
+
+nav a {
+  display: block;
+  padding: 10px 1em 0 1em;
+  text-decoration: none;
+  color: #d0d0d0;
+}
+
+nav ul ul {
+  max-width: 11em;
+  background-color: #585858;
+  position: absolute;
+  z-index: 99;
+  display: none;
+}
+
+nav ul ul li {
+  width: 100%;
+}
+
+nav li:hover ul {
+  display: block;
+}
 
 
 
